@@ -1,14 +1,12 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 export const Container = styled.div`
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-
+    width: 100%;
+    max-width: 991px;
+    margin: 0 auto;
+`
 
 export const Title = styled.h1`
     text-align: center;
@@ -31,4 +29,15 @@ export const ListItem = styled.li`
     margin: 1;
 `;
 
-
+export const LinkHome = styled(Link)`
+    font-family: sans-serif;
+    display: block;
+    width: 4rem;
+    text-align: center;
+    margin: 2rem auto;
+    background-color: #000;
+    padding: .5rem 0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .25rem;
+` 
